@@ -131,9 +131,9 @@ int main () // Função principal do sistema
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Registrar nomes \n");
 		printf("\t2 - Consultar nomes \n");
-		printf("\t3 - Deletar nomes \n\n"); 
+		printf("\t3 - Deletar nomes \n"); 
+		printf("\t4 - Sair do sistema \n");
 		printf("Opção: "); //Fim do menu
-	
 		scanf ("%d", &opcao); //armazanendo a escolha do usuário
 	
 		system("cls"); // responsáel por limpar a tela
@@ -151,6 +151,11 @@ int main () // Função principal do sistema
 	 		case 3:
 			deletar(); // chamada de funções
 	 		break;
+	 		
+	 		case 4:
+	 		printf("Obrigado por utilizar o sistema!\n");
+			return 0; 
+			break;
 
 	 		default:
 	 		printf("Essa opção não está disponível!\n"); //mensagem para o usuário
